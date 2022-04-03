@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply text-gray-300 hover_bg-gray-700 hover_text-white px-3 py-2 rounded-md font-medium transition-all max-h-12;
+    }
+    .btn-primary {
+        @apply btn bg-gray-700 text-gray-50 hover_bg-gray-900;
+    }
+    .form-input {
+        @apply mt-1 focus_ring-indigo-500 focus_border-indigo-500 block w-full px-3 py-2 shadow-sm border sm_text-sm border-gray-400 rounded-md;
+    }
+    .form-label {
+        @apply block text-sm font-medium text-gray-700;
+    }
+    .link {
+        @apply text-blue-500 hover_underline;
+    }
+}
